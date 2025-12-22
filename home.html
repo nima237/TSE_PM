@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازار سرمایه‌گذاری حرفه‌ای</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor-follower"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="Images/logo.png" alt="بورس تهران">
+        </div>
+        <div class="nav-dots">
+            <button class="nav-dot active" data-page="0">
+                <span class="dot-label">خانه</span>
+            </button>
+            <button class="nav-dot" data-page="1">
+                <span class="dot-label">داستان</span>
+            </button>
+            <button class="nav-dot" data-page="2">
+                <span class="dot-label">تابلوها</span>
+            </button>
+            <button class="nav-dot" data-page="3">
+                <span class="dot-label">پایان</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Pages Container -->
+    <div class="pages-container">
+        
+        <!-- Page 1: Hero -->
+        <section class="page page-hero active" data-page="0">
+            <div class="page-bg">
+                <!-- Network Canvas for connecting dots -->
+                <canvas id="networkCanvas"></canvas>
+                <!-- Irregular Shapes -->
+                <div class="irregular-shapes">
+                    <svg class="blob blob-1" viewBox="0 0 200 200">
+                        <path fill="rgba(211, 158, 70, 0.08)" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.5,-0.9C87,14.6,81.4,29.1,73.1,42.1C64.8,55.1,53.8,66.5,40.6,74.1C27.4,81.7,13.7,85.5,-0.9,87C-15.6,88.5,-31.1,87.7,-44.8,81.5C-58.5,75.3,-70.3,63.7,-77.7,49.6C-85.1,35.5,-88.1,18.8,-87.2,0.5C-86.3,-17.8,-81.5,-35.6,-72.3,-50.1C-63.1,-64.6,-49.5,-75.8,-35.1,-82.8C-20.7,-89.8,-10.4,-92.6,2.6,-96.9C15.6,-101.2,30.7,-83.6,44.7,-76.4Z" transform="translate(100 100)"/>
+                    </svg>
+                    <svg class="blob blob-2" viewBox="0 0 200 200">
+                        <path fill="rgba(0, 51, 99, 0.06)" d="M39.9,-67.8C52.4,-61.3,63.5,-51.5,71.4,-39.1C79.3,-26.7,84,-11.6,83.7,3.3C83.4,18.2,78.1,32.8,69.3,45.1C60.5,57.4,48.2,67.4,34.3,73.8C20.4,80.2,4.9,83,-9.9,81.3C-24.7,79.6,-38.8,73.4,-51.1,64.4C-63.4,55.4,-73.9,43.6,-79.5,29.6C-85.1,15.6,-85.8,-0.6,-82.5,-15.8C-79.2,-31,-71.9,-45.2,-61,-55.6C-50.1,-66,-35.6,-72.6,-21.2,-78.3C-6.8,-84,7.5,-88.8,21.7,-86.5C35.9,-84.2,50,-74.3,39.9,-67.8Z" transform="translate(100 100)"/>
+                    </svg>
+                    <svg class="blob blob-3" viewBox="0 0 200 200">
+                        <path fill="rgba(211, 158, 70, 0.05)" d="M47.3,-79.6C61.5,-72.5,73.2,-60.5,80.5,-46.1C87.8,-31.7,90.6,-15.9,89.4,-0.7C88.2,14.5,83,29,75.1,42.1C67.2,55.2,56.6,66.9,43.6,74.7C30.6,82.5,15.3,86.4,0.1,86.2C-15.1,86,-30.2,81.7,-43.3,73.9C-56.4,66.1,-67.5,54.8,-75.3,41.6C-83.1,28.4,-87.6,14.2,-87.8,-0.1C-88,-14.4,-84,-28.8,-76.2,-41.3C-68.4,-53.8,-56.8,-64.4,-43.3,-71.7C-29.8,-79,-14.9,-83,-0.1,-82.8C14.7,-82.6,29.4,-78.2,47.3,-79.6Z" transform="translate(100 100)"/>
+                    </svg>
+                </div>
+                <!-- Geometric decorations -->
+                <div class="geo-shapes">
+                    <div class="geo geo-1"></div>
+                    <div class="geo geo-2"></div>
+                    <div class="geo geo-3"></div>
+                    <div class="geo geo-4"></div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-logo" data-parallax="0.05">
+                    <img src="Images/logo1.png" alt="بورس تهران">
+                    <div class="logo-glow"></div>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="hero-title" data-parallax="0.02">
+                        <span class="title-word">بازار</span>
+                        <span class="title-word">سرمایه‌گذاری</span>
+                        <span class="title-word highlight">حرفه‌ای</span>
+                    </h1>
+
+                    <p class="hero-subtitle" data-parallax="0.03">
+                        <span class="subtitle-line">بستری رسمی برای تأمین مالی، انتقال مالکیت</span>
+                        <span class="subtitle-line">و خروج سرمایه متناسب با منطق کسب‌وکارهای خصوصی</span>
+                    </p>
+
+                    <div class="hero-description" data-parallax="0.04">
+                        <div class="desc-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <p class="desc-text">
+                            بدون الزام به پذیرش در بازارهای رسمی با افشای کنترل‌شده اطلاعات
+                            و تنها با دسترسی سرمایه‌گذاران حرفه‌ای
+                        </p>
+                    </div>
+
+                    <div class="hero-cta" data-parallax="0.05">
+                        <button class="btn-primary">
+                            <span class="btn-text">مسیر متناسب با ساختار کسب‌وکار شما</span>
+                            <span class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </span>
+                            <span class="btn-shine"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 2: Story Timeline -->
+        <section class="page page-story" data-page="1">
+            <div class="page-bg">
+                <div class="gradient-orb orb-3"></div>
+                <div class="line-pattern"></div>
+            </div>
+
+            <div class="story-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-word">مسیر</span>
+                        <span class="title-word highlight">شکل‌گیری</span>
+                        <span class="title-word">بازار</span>
+                    </h2>
+                </div>
+
+                <div class="story-timeline">
+                    <div class="timeline-track"></div>
+                    
+                    <div class="story-item" data-year="۱۴۰۳">
+                        <div class="story-marker">
+                            <div class="marker-dot"></div>
+                            <span class="marker-year">۱۴۰۳</span>
+                        </div>
+                        <div class="story-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>آغاز راه</h3>
+                            </div>
+                            <p>بازار سرمایه‌گذاری حرفه‌ای بورس تهران با هدف ایجاد بستری متفاوت از بازارهای عمومی شکل گرفت؛ بازاری که در آن، <strong>ریسک بالاتر</strong>، <strong>افق بلندمدت‌تر</strong> و <strong>مخاطب حرفه‌ای‌تر</strong> مبنای طراحی باشد.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-item" data-year="نسخه اول">
+                        <div class="story-marker">
+                            <div class="marker-dot"></div>
+                            <span class="marker-year">نسخه اول</span>
+                        </div>
+                        <div class="story-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                    </svg>
+                                </div>
+                                <h3>شرکت‌های سهامی عام پروژه</h3>
+                            </div>
+                            <p>در نسخه اولیه، این بازار به‌طور مشخص برای <strong>شرکت‌های سهامی عام پروژه</strong> ایجاد شد؛ شرکت‌هایی که هنوز به بهره‌برداری نرسیده‌اند، ریسک عملیاتی بالاتری دارند و حضور آن‌ها در بازارهای عمومی منطقی نیست.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-item" data-year="اکنون">
+                        <div class="story-marker">
+                            <div class="marker-dot active"></div>
+                            <span class="marker-year">اکنون</span>
+                        </div>
+                        <div class="story-card highlight-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                </div>
+                                <h3>توسعه دامنه</h3>
+                            </div>
+                            <p>اکنون، با اتکا به همین منطق و تجربه اجرایی، این بازار در حال توسعه دامنه است تا پاسخ‌گوی نیاز <strong>طیف گسترده‌تری از شرکت‌ها</strong> و <strong>ابزارهای حرفه‌ای</strong> باشد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 3: Market Segments -->
+        <section class="page page-segments" data-page="2">
+            <div class="page-bg">
+                <div class="gradient-orb orb-4"></div>
+                <div class="dots-pattern"></div>
+            </div>
+
+            <div class="segments-content">
+                <!-- New Infographic Layout -->
+                <div class="infographic-new">
+                    <!-- Left Side - Center Circle -->
+                    <div class="info-circle-container">
+                        <div class="info-circle">
+                            <div class="info-circle-inner">
+                                <span class="circle-label">بازار</span>
+                                <span class="circle-title">سرمایه‌گذاری</span>
+                                <span class="circle-highlight">حرفه‌ای</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Right Side - Cards -->
+                    <div class="info-cards">
+                        <!-- Card 1 -->
+                        <div class="info-card card-1" data-segment="private">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h4>تابلوی کسب‌وکارهای خصوصی</h4>
+                                <p>شرکت‌های خانوادگی، متمرکز یا بزرگ که نمی‌خواهند پذیرش رسمی شوند</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="info-card card-2" data-segment="transfer">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h4>تابلوی شرکت‌های مشمول واگذاری</h4>
+                                <p>شرکت‌هایی که باید واگذار شوند، اما شرایط پذیرش ندارند</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="info-card card-3" data-segment="innovative">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h4>تابلوی کسب‌وکارهای نوین</h4>
+                                <p>کسب‌وکارهای نوآور که هنوز شرایط پذیرش را ندارند</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="info-card card-4" data-segment="project">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h4>تابلوی شرکت‌های سهامی عام پروژه</h4>
+                                <p>پروژه‌های بزرگ قبل از بهره‌برداری</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="info-card card-5" data-segment="debt">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h4>تابلوی اوراق بدهی خصوصی</h4>
+                                <p>تأمین مالی از طریق بدهی ولی خارج از فضای بانکی</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 4: Ending -->
+        <section class="page page-ending" data-page="3">
+            <div class="page-bg">
+                <div class="gradient-orb orb-5"></div>
+                <div class="wave-pattern"></div>
+            </div>
+
+            <div class="ending-content">
+                <div class="ending-logo">
+                    <img src="Images/logo1.png" alt="بورس تهران">
+                    <div class="logo-glow"></div>
+                </div>
+
+                <div class="ending-message">
+                    <h2 class="ending-title">
+                        <span class="title-word">با</span>
+                        <span class="title-word highlight">تشکر</span>
+                        <span class="title-word">از توجه شما</span>
+                    </h2>
+                    
+                    <div class="ending-tagline">
+                        <p>بازار سرمایه‌گذاری حرفه‌ای</p>
+                        <span class="tagline-divider"></span>
+                        <p>بستری رسمی برای رشد، شراکت و انتقال مالکیت</p>
+                    </div>
+                </div>
+
+                <div class="ending-decoration">
+                    <div class="deco-line"></div>
+                    <div class="deco-diamond">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 12l10 10 10-10L12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="deco-line"></div>
+                </div>
+            </div>
+
+            <footer class="main-footer">
+                <div class="footer-logo">
+                    <img src="Images/logo.png" alt="بورس تهران">
+                </div>
+                <p class="footer-text">© ۱۴۰۳ بورس اوراق بهادار تهران - تمامی حقوق محفوظ است</p>
+            </footer>
+        </section>
+    </div>
+
+    <!-- Fullscreen Presentation Modal -->
+    <div class="presentation-modal" id="presentationModal">
+        <!-- Animated Background -->
+        <div class="modal-bg">
+            <div class="bg-gradient"></div>
+            <div class="particles-layer"></div>
+        </div>
+
+        <!-- Close Button -->
+        <button class="modal-close" id="modalClose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Page Header -->
+        <div class="page-market-header">
+            <div class="market-header-content">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+                <span>تابلوی کسب‌وکارهای خصوصی</span>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="detail-layout">
+            <!-- Content Area (Left) -->
+            <div class="detail-content">
+                <!-- Default/Intro Content -->
+                <div class="content-panel active" data-panel="intro">
+                    <div class="intro-content">
+                        <div class="intro-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h1>تابلوی کسب‌وکارهای خصوصی</h1>
+                        <p class="intro-subtitle">مسیر رسمی برای رشد، شراکت و انتقال مالکیت بدون نیاز به پذیرش رسمی</p>
+                        <div class="intro-hint">
+                            <span>یکی از سرفصل‌ها را انتخاب کنید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 1: Target Companies -->
+                <div class="content-panel" data-panel="target">
+                    <div class="panel-inner">
+                        <h2>این تابلو برای چه شرکت‌هایی مناسب است؟</h2>
+                        <div class="target-grid">
+                            <div class="target-card">
+                                <div class="target-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>کسب‌وکارهای خانوادگی</h3>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                    </svg>
+                                </div>
+                                <h3>بنگاه‌های با مالکیت متمرکز</h3>
+                            </div>
+                            <div class="target-card target-card-wide">
+                                <div class="target-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                </div>
+                                <h3>شرکت‌های بزرگ یا در حال بزرگ شدن که نمی‌خواهند در بورس پذیرش شوند</h3>
+                                <p>اما به سرمایه، شریک جدید یا امکان خروج نیاز دارند</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Concerns -->
+                <div class="content-panel" data-panel="concerns">
+                    <div class="panel-inner">
+                        <h2>دغدغه‌های این شرکت‌ها چیست؟</h2>
+                        <div class="concerns-list">
+                            <div class="concern-item">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>جذب سرمایه برای توسعه</span>
+                            </div>
+                            <div class="concern-item">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                                </svg>
+                                <span>ورود یا خروج شریک یا سهامدار</span>
+                            </div>
+                            <div class="concern-item">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                                <span>انتقال بخشی از مالکیت به‌صورت کنترل‌شده</span>
+                            </div>
+                            <div class="concern-item">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                                <span>مذاکره‌های پرریسک و غیرشفاف خارج از بستر رسمی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Risks -->
+                <div class="content-panel" data-panel="risks">
+                    <div class="panel-inner">
+                        <h2>ریسک‌های شرایط فعلی</h2>
+                        <div class="risks-grid">
+                            <div class="risk-card">
+                                <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                                </svg>
+                                <span>معاملات غیررسمی و پرریسک</span>
+                            </div>
+                            <div class="risk-card">
+                                <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>قیمت‌گذاری مبهم</span>
+                            </div>
+                            <div class="risk-card">
+                                <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                <span>پراکندگی اسناد و فرآیندها</span>
+                            </div>
+                            <div class="risk-card">
+                                <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"/>
+                                </svg>
+                                <span>عدم وجود نظارت و ثبت رسمی فرآیند انتقال</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Changes -->
+                <div class="content-panel" data-panel="changes">
+                    <div class="panel-inner">
+                        <h2>این تابلو چه تغییری ایجاد می‌کند؟</h2>
+                        <div class="changes-list">
+                            <div class="change-row">
+                                <div class="change-from">فضای توافقی و غیرشفاف</div>
+                                <div class="change-arrow">←</div>
+                                <div class="change-to">محیط رسمی و تحت نظارت</div>
+                            </div>
+                            <div class="change-row">
+                                <div class="change-from">چانه‌زنی پشت درهای بسته</div>
+                                <div class="change-arrow">←</div>
+                                <div class="change-to">حراج حرفه‌ای و منصفانه</div>
+                            </div>
+                            <div class="change-row">
+                                <div class="change-from">مسیرهای پرریسک</div>
+                                <div class="change-arrow">←</div>
+                                <div class="change-to">فرآیند قابل برنامه‌ریزی</div>
+                            </div>
+                        </div>
+                        <div class="highlight-quote">
+                            «معامله در سکوت و ابهام» را به «معامله حرفه‌ای، ثبت‌شده و قابل اتکا» تبدیل می‌کند.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 5: Benefits -->
+                <div class="content-panel" data-panel="benefits">
+                    <div class="panel-inner">
+                        <h2>چرا این تابلو جذاب برای شرکت‌های خصوصی است؟</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>حفظ کنترل</h3>
+                                <p>کنترل شرکت حفظ می‌شود</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                </div>
+                                <h3>افشای کنترل‌شده</h3>
+                                <p>اطلاعات به صورت هدفمند افشا می‌شود</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                                    </svg>
+                                </div>
+                                <h3>مسیر نهادی</h3>
+                                <p>به‌جای مذاکرات شخصی و پرریسک</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>کشف قیمت</h3>
+                                <p>قیمت‌گذاری رسمی و حرفه‌ای</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                </div>
+                                <h3>دریافت خدمات بازار سرمایه</h3>
+                                <p>ساختار سازی و ارتقا تدریجی حاکمیت شرکتی</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 6: Global Experiences -->
+                <div class="content-panel" data-panel="global">
+                    <div class="panel-inner scrollable">
+                        <h2>تجارب سایر بورس‌ها</h2>
+                        
+                        <!-- Exchange Cards -->
+                        <div class="exchange-grid">
+                            <!-- Istanbul -->
+                            <div class="exchange-card" data-exchange="istanbul">
+                                <div class="exchange-logo">
+                                    <img src="Images/20190815220913!Borsa_İstanbul_logo.png" alt="Borsa Istanbul">
+                                </div>
+                                <h3>بورس استانبول</h3>
+                                <span class="exchange-tag">۲ بازار</span>
+                            </div>
+                            
+                            <!-- London AIM -->
+                            <div class="exchange-card" data-exchange="london">
+                                <div class="exchange-logo">
+                                    <img src="Images/London Stock Exchange_logo.png" alt="London Stock Exchange">
+                                </div>
+                                <h3>بازار AIM لندن</h3>
+                                <span class="exchange-tag">۸۵۲ شرکت</span>
+                            </div>
+                            
+                            <!-- Jordan -->
+                            <div class="exchange-card" data-exchange="jordan">
+                                <div class="exchange-logo">
+                                    <img src="Images/Amman_Stock_Exchange_logo.svg.png" alt="Amman Stock Exchange">
+                                </div>
+                                <h3>بورس اردن</h3>
+                                <span class="exchange-tag">از ۲۰۱۸</span>
+                            </div>
+                            
+                            <!-- Nasdaq -->
+                            <div class="exchange-card" data-exchange="nasdaq">
+                                <div class="exchange-logo">
+                                    <img src="Images/nasdaq_logo.png" alt="Nasdaq">
+                                </div>
+                                <h3>بازار خصوصی نزدک</h3>
+                                <span class="exchange-tag">۶۵۰ شرکت</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Exchange Details -->
+                        <div class="exchange-details">
+                            <!-- Istanbul Details -->
+                            <div class="exchange-detail" data-detail="istanbul">
+                                <div class="detail-header">
+                                    <h3>بورس استانبول</h3>
+                                    <button class="detail-close">×</button>
+                                </div>
+                                <div class="detail-markets">
+                                    <div class="market-section">
+                                        <h4>۱. سامانه معاملاتی پیش‌ از پذیرش</h4>
+                                        <p class="market-year">راه‌اندازی: ۲۰۱۱</p>
+                                        <ul>
+                                            <li>پلتفرمی برای معامله سهام شرکت‌های عمومی پذیرش‌نشده</li>
+                                            <li>معاملات به صورت حراج گسسته ۵ بار در روز</li>
+                                            <li>دامنه نوسان ۱۰ درصدی</li>
+                                            <li>ممنوعیت فروش استقراضی</li>
+                                        </ul>
+                                        <div class="auction-table">
+                                            <div class="auction-item">حراج اول<br><small>۹:۴۰-۹:۵۵</small></div>
+                                            <div class="auction-item">حراج دوم<br><small>۱۰:۰۰-۱۲:۵۵</small></div>
+                                            <div class="auction-item">حراج سوم<br><small>۱۳:۰۰-۱۳:۵۵</small></div>
+                                            <div class="auction-item">حراج چهارم<br><small>۱۴:۰۰-۱۷:۵۵</small></div>
+                                            <div class="auction-item">حراج پنجم<br><small>۱۸:۰۰-۱۸:۱۰</small></div>
+                                        </div>
+                                    </div>
+                                    <div class="market-section">
+                                        <h4>۲. بازار خصوصی (Private Market)</h4>
+                                        <p class="market-year">راه‌اندازی: ۲۰۱۴</p>
+                                        <ul>
+                                            <li>مختص شرکت‌های خصوصی بدون عرضه عمومی</li>
+                                            <li>تعداد سهامداران شرکت‌ها کمتر از ۵۰۰ نفر</li>
+                                            <li>معافیت از الزامات افشای اطلاعات</li>
+                                            <li>فقط برای سرمایه‌گذاران واجدشرایط</li>
+                                            <li>پلتفرم مجزا با قابلیت مذاکره آنلاین</li>
+                                            <li>معاملات به صورت گسسته</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- London Details -->
+                            <div class="exchange-detail" data-detail="london">
+                                <div class="detail-header">
+                                    <h3>بازار AIM لندن</h3>
+                                    <button class="detail-close">×</button>
+                                </div>
+                                <div class="detail-content-inner">
+                                    <div class="stats-row">
+                                        <div class="stat-box">
+                                            <span class="stat-value">۸۵۲</span>
+                                            <span class="stat-label">شرکت فعال</span>
+                                        </div>
+                                        <div class="stat-box">
+                                            <span class="stat-value">۱۳۵</span>
+                                            <span class="stat-label">میلیارد پوند ارزش بازار</span>
+                                        </div>
+                                        <div class="stat-box">
+                                            <span class="stat-value">۱۳۰+</span>
+                                            <span class="stat-label">میلیارد پوند تأمین مالی</span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>بستری برای شرکت‌های کوچک و متوسط با پتانسیل رشد</li>
+                                        <li>بیش از یک سوم شرکت‌ها خارج از انگلستان</li>
+                                        <li>شروع با ۱۰ شرکت و ۸۲ میلیون پوند</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Jordan Details -->
+                            <div class="exchange-detail" data-detail="jordan">
+                                <div class="detail-header">
+                                    <h3>بورس اردن</h3>
+                                    <button class="detail-close">×</button>
+                                </div>
+                                <div class="detail-content-inner">
+                                    <p class="market-year">راه‌اندازی: ۲۰۱۸</p>
+                                    <ul>
+                                        <li>برای شرکت‌های پذیرش‌نشده و لغو پذیرش‌شده</li>
+                                        <li>معاملات در همان سامانه بورس به صورت پیوسته</li>
+                                        <li>افشای معاملات انجام‌شده</li>
+                                        <li>عدم لحاظ در شاخص بورس</li>
+                                        <li>انتقال شرکت‌های واجد شرایط به بازار اصلی</li>
+                                    </ul>
+                                    <div class="trading-schedule">
+                                        <h4>برنامه معاملاتی:</h4>
+                                        <div class="schedule-grid">
+                                            <div>Closed: 7:30-9:45</div>
+                                            <div>Call: 9:45-9:50</div>
+                                            <div>Trading: 9:50-10:15</div>
+                                            <div>Block: 12:30-12:45</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Nasdaq Details -->
+                            <div class="exchange-detail" data-detail="nasdaq">
+                                <div class="detail-header">
+                                    <h3>بازار خصوصی نزدک</h3>
+                                    <button class="detail-close">×</button>
+                                </div>
+                                <div class="detail-content-inner">
+                                    <p class="market-year">راه‌اندازی: ۲۰۱۳</p>
+                                    <div class="stats-row">
+                                        <div class="stat-box">
+                                            <span class="stat-value">۶۵۰</span>
+                                            <span class="stat-label">شرکت</span>
+                                        </div>
+                                        <div class="stat-box">
+                                            <span class="stat-value">۴۵+</span>
+                                            <span class="stat-label">میلیارد دلار معاملات در دهه گذشته</span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>ارتقای نقدشوندگی ضمن حفظ ماهیت خصوصی</li>
+                                        <li>مزایای تبلیغاتی و رسانه‌ای</li>
+                                        <li>دسترسی به فهرست سرمایه‌گذاران</li>
+                                        <li>روش‌های متنوع کشف قیمت (حراج هلندی، انگلیسی و...)</li>
+                                        <li>امکان محدود کردن خریداران</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 7: TSE Model -->
+                <div class="content-panel" data-panel="model">
+                    <div class="panel-inner scrollable">
+                        <h2>الگوی پیشنهادی بورس تهران</h2>
+                        
+                        <div class="model-sections">
+                            <!-- Listing Conditions -->
+                            <div class="model-section">
+                                <div class="section-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>شرایط درج</h3>
+                                <ul class="model-list">
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                        <span>حداقل ۲ سال سابقه فعالیت</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                        <span>حداقل سرمایه ۱۲۰ میلیارد تومان یا درآمد ۲۰۰ میلیارد تومان در آخرین سال مالی</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                        <span>صورت‌های مالی حسابرسی‌شده توسط حسابرس معتمد</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Trading Conditions -->
+                            <div class="model-section">
+                                <div class="section-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+                                <h3>شرایط معاملات</h3>
+                                <p class="section-hint">برای مشاهده جزئیات، روی هر مورد کلیک کنید</p>
+                                
+                                <div class="expandable-list">
+                                    <!-- Item 1 -->
+                                    <div class="expandable-item">
+                                        <div class="expandable-header">
+                                            <div class="expandable-title">
+                                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                                </svg>
+                                                <span>حراج‌های گسسته (تک‌قیمتی)</span>
+                                            </div>
+                                            <div class="expandable-toggle">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 6v12m6-6H6"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="expandable-content">
+                                            <div class="detail-box">
+                                                <div class="detail-section">
+                                                    <h5>تعریف:</h5>
+                                                    <p>معاملات در زمان‌های مشخص و از پیش اعلام‌شده انجام می‌شود و یک قیمت تعادلی واحد برای کل معامله کشف می‌شود.</p>
+                                                </div>
+                                                <div class="detail-section benefits">
+                                                    <h5>مزایا:</h5>
+                                                    <ul>
+                                                        <li>کشف قیمت منصفانه و غیرهیجانی</li>
+                                                        <li>جلوگیری از نوسانات مصنوعی و دستکاری قیمت</li>
+                                                        <li>امکان برنامه‌ریزی دقیق برای فروش یا ورود شریک جدید</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Item 2 -->
+                                    <div class="expandable-item">
+                                        <div class="expandable-header">
+                                            <div class="expandable-title">
+                                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                                </svg>
+                                                <span>محدود به سرمایه‌گذاران حرفه‌ای</span>
+                                            </div>
+                                            <div class="expandable-toggle">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 6v12m6-6H6"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="expandable-content">
+                                            <div class="detail-box">
+                                                <div class="detail-section">
+                                                    <h5>تعریف:</h5>
+                                                    <p>فقط اشخاص نهادی، حقوقی یا حقیقی واجد شرایط حرفه‌ای امکان معامله دارند.</p>
+                                                </div>
+                                                <div class="detail-section benefits">
+                                                    <h5>مزایا:</h5>
+                                                    <ul>
+                                                        <li>تعامل با سرمایه‌گذاران آگاه و بلندمدت</li>
+                                                        <li>کاهش ریسک دعاوی، سوءبرداشت و فشارهای افکار عمومی</li>
+                                                        <li>حفظ محرمانگی ساختار مالکیت و تصمیمات راهبردی</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Item 3 -->
+                                    <div class="expandable-item">
+                                        <div class="expandable-header">
+                                            <div class="expandable-title">
+                                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                                </svg>
+                                                <span>معاملات بلوک یا عمده</span>
+                                            </div>
+                                            <div class="expandable-toggle">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 6v12m6-6H6"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="expandable-content">
+                                            <div class="detail-box">
+                                                <div class="detail-section">
+                                                    <h5>تعریف:</h5>
+                                                    <p><strong>معامله بلوکی:</strong> انتقال درصد معناداری از سهام در یک سفارش واحد<br>
+                                                    <strong>معامله عمده:</strong> معامله‌ای با حجم بالا که منجر به تغییر واقعی در مالکیت می‌شود.</p>
+                                                </div>
+                                                <div class="detail-section benefits">
+                                                    <h5>مزایا:</h5>
+                                                    <ul>
+                                                        <li>انتقال واقعی و شفاف مالکیت (نه معاملات خرد و پراکنده)</li>
+                                                        <li>مناسب برای ورود شریک استراتژیک یا خروج کنترل‌شده سهامدار</li>
+                                                        <li>جلوگیری از نوسان‌سازی با معاملات خرد</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Item 4 -->
+                                    <div class="expandable-item">
+                                        <div class="expandable-header">
+                                            <div class="expandable-title">
+                                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                                </svg>
+                                                <span>فاقد دامنه نوسان قیمتی</span>
+                                            </div>
+                                            <div class="expandable-toggle">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 6v12m6-6H6"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="expandable-content">
+                                            <div class="detail-box">
+                                                <div class="detail-section">
+                                                    <h5>تعریف:</h5>
+                                                    <p>قیمت معامله محدود به سقف و کف روزانه نیست و در چارچوب حراج کشف می‌شود.</p>
+                                                </div>
+                                                <div class="detail-section benefits">
+                                                    <h5>مزایا:</h5>
+                                                    <ul>
+                                                        <li>انعطاف‌پذیری کامل در کشف قیمت متناسب با واقعیت کسب‌وکار</li>
+                                                        <li>جلوگیری از قفل‌شدن معاملات و شکست در انتقال مالکیت</li>
+                                                        <li>افزایش احتمال انجام موفق معامله در زمان مدنظر شرکت</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Item 5 -->
+                                    <div class="expandable-item">
+                                        <div class="expandable-header">
+                                            <div class="expandable-title">
+                                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                                                </svg>
+                                                <span>ممنوعیت معاملات چرخشی تا یک سال</span>
+                                            </div>
+                                            <div class="expandable-toggle">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 6v12m6-6H6"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="expandable-content">
+                                            <div class="detail-box">
+                                                <div class="detail-section">
+                                                    <h5>تعریف:</h5>
+                                                    <p>امکان انجام معاملاتی که مالکیت واقعی را تغییر ندهد (خرید و فروش صوری) وجود ندارد.</p>
+                                                </div>
+                                                <div class="detail-section benefits">
+                                                    <h5>مزایا:</h5>
+                                                    <ul>
+                                                        <li>افزایش اعتبار قیمت‌های کشف‌شده</li>
+                                                        <li>جلوگیری از سیگنال‌های غلط به سرمایه‌گذاران</li>
+                                                        <li>حفظ شأن و حرفه‌ای‌بودن بازار خصوصی</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Item 6 -->
+                                    <div class="expandable-item">
+                                        <div class="expandable-header">
+                                            <div class="expandable-title">
+                                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                </svg>
+                                                <span>تعیین قیمت پایه</span>
+                                            </div>
+                                            <div class="expandable-toggle">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 6v12m6-6H6"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="expandable-content">
+                                            <div class="detail-box">
+                                                <div class="detail-section">
+                                                    <h5>تعریف:</h5>
+                                                    <p>سهامدار عرضه‌کننده، قیمت حداقلی موردنظر خود را اعلام می‌کند.</p>
+                                                </div>
+                                                <div class="detail-section benefits">
+                                                    <h5>مزایا:</h5>
+                                                    <ul>
+                                                        <li>حفظ کنترل سهامدار بر حداقل ارزش معامله</li>
+                                                        <li>جلوگیری از فروش ناخواسته با قیمت نامناسب</li>
+                                                        <li>افزایش قدرت چانه‌زنی در فرآیند جذب سرمایه یا واگذاری</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Item 7 -->
+                                    <div class="expandable-item">
+                                        <div class="expandable-header">
+                                            <div class="expandable-title">
+                                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                </svg>
+                                                <span>چند جلسه حراج در هر روز کاری</span>
+                                            </div>
+                                            <div class="expandable-toggle">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 6v12m6-6H6"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="expandable-content">
+                                            <div class="detail-box">
+                                                <div class="detail-section">
+                                                    <h5>تعریف:</h5>
+                                                    <p>در صورت عدم تحقق معامله، امکان تکرار حراج وجود دارد.</p>
+                                                </div>
+                                                <div class="detail-section benefits">
+                                                    <h5>مزایا:</h5>
+                                                    <ul>
+                                                        <li>افزایش شانس انجام معامله موفق</li>
+                                                        <li>انعطاف در زمان‌بندی ورود یا خروج سرمایه‌گذار</li>
+                                                        <li>کاهش هزینه فرصت ناشی از عدم انجام معامله</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Disclosure Conditions -->
+                            <div class="model-section highlight">
+                                <div class="section-icon gold">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                </div>
+                                <h3>شرایط افشای اطلاعات</h3>
+                                <div class="transparency-badge">مبتنی بر «شفافیت کنترل‌شده»</div>
+                                <ul class="model-list">
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                        </svg>
+                                        <span>عدم افشای قیمت در زمان انجام معامله در TSETMC</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                        <span>دسترسی به تاریخچه معاملات پس از انجام</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                        <span>افشای ارزش و حجم معاملات به‌صورت تجمیعی در پایان روز</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                        <span>افشای صورت‌های مالی شش‌ماهه و سالانه حسابرسی‌شده</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions Menu (Right) -->
+            <div class="questions-menu">
+                <div class="question-box active" data-target="intro">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                    <span class="q-text">معرفی</span>
+                </div>
+                <div class="question-box" data-target="target">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    <span class="q-text">شرکت‌های هدف</span>
+                </div>
+                <div class="question-box" data-target="concerns">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="q-text">چالش‌های اصلی</span>
+                </div>
+                <div class="question-box" data-target="risks">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <span class="q-text">ریسک‌های فعلی</span>
+                </div>
+                <div class="question-box" data-target="changes">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    <span class="q-text">تغییرات ایجاد شده</span>
+                </div>
+                <div class="question-box" data-target="benefits">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                    </svg>
+                    <span class="q-text">جذابیت برای شرکت‌ها</span>
+                </div>
+                <div class="question-box" data-target="global">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                    </svg>
+                    <span class="q-text">تجارب سایر بورس‌ها</span>
+                </div>
+                <div class="question-box" data-target="model">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <span class="q-text">الگوی پیشنهادی</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Presentation Modal - Transfer/Divestment -->
+    <div class="presentation-modal" id="presentationModalTransfer">
+        <!-- Animated Background -->
+        <div class="modal-bg">
+            <div class="bg-gradient"></div>
+            <div class="particles-layer"></div>
+        </div>
+
+        <!-- Close Button -->
+        <button class="modal-close" id="modalCloseTransfer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Page Header -->
+        <div class="page-market-header transfer-header">
+            <div class="market-header-content">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                </svg>
+                <span>تابلوی شرکت‌های مشمول واگذاری</span>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="detail-layout">
+            <!-- Content Area (Left) -->
+            <div class="detail-content">
+                <!-- Default/Intro Content -->
+                <div class="content-panel active" data-panel="intro">
+                    <div class="intro-content">
+                        <div class="intro-icon transfer-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                            </svg>
+                        </div>
+                        <h1>تابلوی شرکت‌های مشمول واگذاری</h1>
+                        <p class="intro-subtitle">واگذاری مالکیت در یک محیط حرفه‌ای، شفاف و قابل اتکا</p>
+                        <div class="intro-hint">
+                            <span>یکی از سرفصل‌ها را انتخاب کنید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 1: Target Companies -->
+                <div class="content-panel" data-panel="target">
+                    <div class="panel-inner">
+                        <h2>این تابلو برای چه شرکت‌هایی مناسب است؟</h2>
+                        <div class="target-grid">
+                            <div class="target-card">
+                                <div class="target-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                    </svg>
+                                </div>
+                                <h3>شرکت‌های مشمول اصل ۴۴</h3>
+                                <p>مشمول سیاست‌های واگذاری</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                                    </svg>
+                                </div>
+                                <h3>بنگاه‌های دولتی یا عمومی</h3>
+                                <p>غیربورسی</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                    </svg>
+                                </div>
+                                <h3>واگذاری بلوکی یا کنترلی</h3>
+                                <p>عرضه خرد عمومی مناسب نیست</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                </div>
+                                <h3>آماده پذیرش در آینده</h3>
+                                <p>با اصلاح ساختار در افق میان‌مدت</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Concerns -->
+                <div class="content-panel" data-panel="concerns">
+                    <div class="panel-inner">
+                        <h2>دغدغه‌ها در وضعیت فعلی چیست؟</h2>
+                        <div class="concerns-list">
+                            <div class="concern-item transfer-concern">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>فرآیند خصوصی‌سازی با عدم استقبال، طولانی‌شدن یا توقف اداری مواجه می‌شود</span>
+                            </div>
+                            <div class="concern-item transfer-concern">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                <span>بخش قابل‌توجهی از شرکت‌ها از نظر ساختار مالی آماده پذیرش عمومی نیستند</span>
+                            </div>
+                            <div class="concern-item transfer-concern">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"/>
+                                </svg>
+                                <span>شفافیت، ترکیب سهامداری یا حاکمیت شرکتی ضعیف است</span>
+                            </div>
+                            <div class="concern-item transfer-concern">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+                                </svg>
+                                <span>عرضه عمومی این شرکت‌ها جذابیت کافی ندارد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 5: Benefits -->
+                <div class="content-panel" data-panel="benefits">
+                    <div class="panel-inner">
+                        <h2>چرا این تابلو یرای شرکت‌ها جذاب است؟</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>واگذاری تدریجی</h3>
+                                <p>قابل مدیریت انجام می‌شود</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>کاهش ریسک</h3>
+                                <p>ریسک شکست عرضه عمومی کاهش می‌یابد</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>سرمایه‌گذار حرفه‌ای</h3>
+                                <p>بلندمدت جذب می‌شود</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                </div>
+                                <h3>مسیر اصلاح ساختار</h3>
+                                <p>آماده‌سازی برای پذیرش ایجاد می‌شود</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon transfer-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>فرآیند شفاف</h3>
+                                <p>قابل دفاع و نهادی است</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-quote transfer-quote">
+                            <div class="quote-glow"></div>
+                            <p>«واگذاری مالکیت، نه در فضای اداری و طولانی و نه در بازار هیجانی؛ بلکه در یک محیط حرفه‌ای و قابل اتکا»</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Model -->
+                <div class="content-panel" data-panel="model">
+                    <div class="panel-inner">
+                        <h2>الگوی پیشنهادی بورس تهران</h2>
+                        
+                        <div class="model-sections">
+                            <div class="model-section">
+                                <div class="section-icon transfer-icon-bg">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+                                <h3>در بازار سرمایه‌گذاری حرفه‌ای</h3>
+                                <ul class="model-list">
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                                        </svg>
+                                        <span>واگذاری از مسیر حراج‌های بلوکی و گسسته</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                        </svg>
+                                        <span>فقط برای سرمایه‌گذاران حرفه‌ای</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                                        </svg>
+                                        <span>بدون پذیرش رسمی و بدون عرضه خرد</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="model-section highlight transfer-highlight">
+                                <div class="section-icon transfer-icon-bg">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>در محیطی رسمی که:</h3>
+                                <ul class="model-list">
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                        <span>کشف قیمت انجام می‌شود</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                        <span>مالکیت ثبت و شفاف می‌گردد</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+                                        </svg>
+                                        <span>اصلاح تدریجی ساختار شرکت ممکن می‌شود</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="model-section">
+                                <div class="section-icon transfer-icon-bg">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                                    </svg>
+                                </div>
+                                <h3>شرایط درج و معاملات</h3>
+                                <ul class="model-list">
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                        <span>درج بدون پذیرش در بازارهای اصلی</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                        </svg>
+                                        <span>معاملات صرفاً بلوکی یا عمده</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                        <span>از طریق حراج‌های گسسته</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 6: Future Path -->
+                <div class="content-panel" data-panel="future">
+                    <div class="panel-inner">
+                        <h2>نقش این تابلو در مسیر پذیرش آینده</h2>
+                        
+                        <div class="future-path">
+                            <div class="path-intro">
+                                <div class="path-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>این تابلو یک سکوی گذار نهادی است</h3>
+                            </div>
+                            
+                            <div class="path-steps">
+                                <div class="path-step">
+                                    <div class="step-number">۱</div>
+                                    <div class="step-content">
+                                        <h4>کاهش مالکیت دولتی</h4>
+                                        <p>امکان کاهش تدریجی سهم دولت</p>
+                                    </div>
+                                </div>
+                                <div class="path-step">
+                                    <div class="step-number">۲</div>
+                                    <div class="step-content">
+                                        <h4>اصلاح حاکمیت شرکتی</h4>
+                                        <p>بهبود ساختار مدیریتی و نظارتی</p>
+                                    </div>
+                                </div>
+                                <div class="path-step">
+                                    <div class="step-number">۳</div>
+                                    <div class="step-content">
+                                        <h4>تمرین نظم مالی</h4>
+                                        <p>گزارشگری منظم و شفاف</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="path-destination">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                </svg>
+                                <p>و در صورت احراز شرایط، در آینده به <strong>بازارهای پذیرش‌محور</strong> منتقل شود</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions Menu (Right) -->
+            <div class="questions-menu">
+                <div class="question-box active" data-target="intro">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                    <span class="q-text">معرفی</span>
+                </div>
+                <div class="question-box" data-target="target">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    <span class="q-text">شرکت‌های هدف</span>
+                </div>
+                <div class="question-box" data-target="concerns">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="q-text">چالش‌های اصلی</span>
+                </div>
+                <div class="question-box" data-target="benefits">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                    <span class="q-text">جذابیت برای شرکت‌ها</span>
+                </div>
+                <div class="question-box" data-target="model">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <span class="q-text">الگوی پیشنهادی</span>
+                </div>
+                <div class="question-box" data-target="future">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <span class="q-text">مسیر پذیرش آینده</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Presentation Modal - Innovative Businesses -->
+    <div class="presentation-modal" id="presentationModalInnovative">
+        <!-- Animated Background -->
+        <div class="modal-bg">
+            <div class="bg-gradient"></div>
+            <div class="particles-layer"></div>
+        </div>
+
+        <!-- Close Button -->
+        <button class="modal-close" id="modalCloseInnovative">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Page Header -->
+        <div class="page-market-header innovative-header">
+            <div class="market-header-content">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                </svg>
+                <span>تابلوی کسب‌وکارهای نوین</span>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="detail-layout">
+            <!-- Content Area (Left) -->
+            <div class="detail-content">
+                <!-- Default/Intro Content -->
+                <div class="content-panel active" data-panel="intro">
+                    <div class="intro-content">
+                        <div class="intro-icon innovative-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h1>تابلوی کسب‌وکارهای نوین</h1>
+                        <p class="intro-subtitle">سکوی رشد و تأمین مالی حرفه‌ای، قبل از پذیرش عمومی</p>
+                        <div class="intro-hint">
+                            <span>یکی از سرفصل‌ها را انتخاب کنید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 1: Target Companies -->
+                <div class="content-panel" data-panel="target">
+                    <div class="panel-inner">
+                        <h2>این تابلو برای چه کسب‌وکارهایی است؟</h2>
+                        <div class="target-grid">
+                            <div class="target-card">
+                                <div class="target-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                                <h3>شرکت‌های نوآور و رشد‌یافته</h3>
+                                <p>Scale-up</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>مدل درآمدی تثبیت‌شده</h3>
+                                <p>درآمد پایدار و قابل پیش‌بینی</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                </div>
+                                <h3>در حال رشد</h3>
+                                <p>مسیر صعودی مشخص</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>قبل از پذیرش عمومی</h3>
+                                <p>هنوز برای پذیرش آماده نیستند</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Current Problem -->
+                <div class="content-panel" data-panel="problem">
+                    <div class="panel-inner">
+                        <h2>چالش‌های اصلی</h2>
+                        
+                        <div class="problem-intro">
+                            <div class="problem-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                                <span>این کسب‌وکارها از نظر رشد و فناوری جلوتر از بازار سنتی‌اند</span>
+                            </div>
+                        </div>
+                        
+                        <h3 class="problem-subtitle">اما:</h3>
+                        <div class="concerns-list">
+                            <div class="concern-item innovative-concern">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>الزامات پذیرش رسمی برایشان زودهنگام است</span>
+                            </div>
+                            <div class="concern-item innovative-concern">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                                <span>بازار عمومی ریسک آن‌ها را به‌درستی قیمت‌گذاری نمی‌کند</span>
+                            </div>
+                        </div>
+                        
+                        <h3 class="problem-subtitle">تأمین مالی آن‌ها غالباً:</h3>
+                        <div class="risks-grid innovative-risks">
+                            <div class="risk-card">
+                                <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                                <span>محدود به مذاکرات خصوصی</span>
+                            </div>
+                            <div class="risk-card">
+                                <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                </svg>
+                                <span>با ریسک حقوقی</span>
+                            </div>
+                            <div class="risk-card">
+                                <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"/>
+                                </svg>
+                                <span>بدون مسیر خروج شفاف</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 5: Benefits -->
+                <div class="content-panel" data-panel="benefits">
+                    <div class="panel-inner">
+                        <h2>چرا این تابلو برای کسب‌وکارهای نوین جذاب است؟</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>تأمین مالی هدفمند</h3>
+                                <p>برای رشد و جهش کسب‌وکار</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>حفظ کنترل</h3>
+                                <p>کنترل بنیان‌گذاران حفظ می‌شود</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>سرمایه‌گذار حرفه‌ای</h3>
+                                <p>جذب سرمایه‌گذار حرفه‌ای</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                </div>
+                                <h3>بدون فشار بازار خرد</h3>
+                                <p>افشای عمومی و فشار بازار خرد وجود ندارد</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon innovative-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                                    </svg>
+                                </div>
+                                <h3>مسیر روشن</h3>
+                                <p>قبل از پذیرش شکل می‌گیرد</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-quote innovative-quote">
+                            <div class="quote-glow"></div>
+                            <p>«رشد کن، حرفه‌ای شو، بعد وارد بازار عمومی شو»</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Model -->
+                <div class="content-panel" data-panel="model">
+                    <div class="panel-inner">
+                        <h2>الگوی پیشنهادی بورس تهران</h2>
+                        
+                        <div class="model-sections">
+                            <div class="model-section innovative-section">
+                                <div class="section-icon innovative-icon-bg">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+                                <h3>در بازار سرمایه‌گذاری حرفه‌ای</h3>
+                                <ul class="model-list">
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                        <span>تأمین مالی و نقل‌وانتقال سهام بدون پذیرش عمومی</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                        </svg>
+                                        <span>با افشای کنترل‌شده</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                        </svg>
+                                        <span>معاملات صرفاً برای سرمایه‌گذاران حرفه‌ای</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                        </svg>
+                                        <span>استفاده از حراج‌های گسسته و معاملات بلوکی</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                        <span>ایجاد سابقه معاملاتی و نظم نهادی</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Future Path -->
+                <div class="content-panel" data-panel="future">
+                    <div class="panel-inner">
+                        <h2>نقش این تابلو در مسیر پذیرش آینده</h2>
+                        
+                        <div class="future-path innovative-path">
+                            <div class="path-intro">
+                                <div class="path-icon innovative-path-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>این تابلو سکوی پیش‌نیاز پذیرش احتمالی است</h3>
+                            </div>
+                            
+                            <h4 class="path-label">به شرکت کمک می‌کند:</h4>
+                            <div class="path-steps">
+                                <div class="path-step innovative-step">
+                                    <div class="step-number">۱</div>
+                                    <div class="step-content">
+                                        <h4>تثبیت ساختار مالی</h4>
+                                        <p>ساختار مالی و گزارشگری را تثبیت کند</p>
+                                    </div>
+                                </div>
+                                <div class="path-step innovative-step">
+                                    <div class="step-number">۲</div>
+                                    <div class="step-content">
+                                        <h4>ارتقای حاکمیت شرکتی</h4>
+                                        <p>حاکمیت شرکتی را ارتقا دهد</p>
+                                    </div>
+                                </div>
+                                <div class="path-step innovative-step">
+                                    <div class="step-number">۳</div>
+                                    <div class="step-content">
+                                        <h4>همکاری با سرمایه‌گذار نهادی</h4>
+                                        <p>با سرمایه‌گذار نهادی کار کند</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="path-destination innovative-destination">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                </svg>
+                                <p>و در صورت احراز شرایط، به‌صورت طبیعی به <strong>بازارهای پذیرش‌محور</strong> منتقل شود</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions Menu (Right) -->
+            <div class="questions-menu">
+                <div class="question-box active" data-target="intro">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                    <span class="q-text">معرفی</span>
+                </div>
+                <div class="question-box" data-target="target">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <span class="q-text">شرکت‌های هدف</span>
+                </div>
+                <div class="question-box" data-target="problem">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="q-text">چالش‌های اصلی</span>
+                </div>
+                <div class="question-box" data-target="benefits">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                    <span class="q-text">جذابیت برای شرکت‌ها</span>
+                </div>
+                <div class="question-box" data-target="model">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <span class="q-text">الگوی پیشنهادی</span>
+                </div>
+                <div class="question-box" data-target="future">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <span class="q-text">مسیر پذیرش آینده</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Presentation Modal - Project Companies -->
+    <div class="presentation-modal" id="presentationModalProject">
+        <!-- Animated Background -->
+        <div class="modal-bg">
+            <div class="bg-gradient"></div>
+            <div class="particles-layer"></div>
+        </div>
+
+        <!-- Close Button -->
+        <button class="modal-close" id="modalCloseProject">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Page Header -->
+        <div class="page-market-header project-header">
+            <div class="market-header-content">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                </svg>
+                <span>تابلوی شرکت‌های سهامی عام پروژه</span>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="detail-layout">
+            <!-- Content Area (Left) -->
+            <div class="detail-content">
+                <!-- Default/Intro Content -->
+                <div class="content-panel active" data-panel="intro">
+                    <div class="intro-content">
+                        <div class="intro-icon project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                            </svg>
+                        </div>
+                        <h1>تابلوی شرکت‌های سهامی عام پروژه</h1>
+                        <p class="intro-subtitle">تأمین مالی پروژه‌های بزرگ، پیش از بهره‌برداری</p>
+                        <div class="intro-hint">
+                            <span>یکی از سرفصل‌ها را انتخاب کنید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 1: Target Companies -->
+                <div class="content-panel" data-panel="target">
+                    <div class="panel-inner">
+                        <h2>این تابلو برای چه شرکت‌هایی مناسب است؟</h2>
+                        <div class="target-grid">
+                            <div class="target-card">
+                                <div class="target-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                    </svg>
+                                </div>
+                                <h3>شرکت‌های سهامی عام پروژه</h3>
+                                <p>ساختار حقوقی ویژه پروژه‌ها</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                                    </svg>
+                                </div>
+                                <h3>پیش از بهره‌برداری</h3>
+                                <p>هنوز به بهره‌برداری نرسیده‌اند</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                    </svg>
+                                </div>
+                                <h3>ریسک بالاتر</h3>
+                                <p>ریسک ساخت و اجرا</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                    </svg>
+                                </div>
+                                <h3>سرمایه‌گذار حرفه‌ای</h3>
+                                <p>طراحی‌شده برای حرفه‌ای‌ها</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Current Problem -->
+                <div class="content-panel" data-panel="problem">
+                    <div class="panel-inner">
+                        <h2>چالش‌های اصلی</h2>
+                        
+                        <div class="problem-section">
+                            <h3 class="problem-subtitle project-border">پروژه‌های بزرگ:</h3>
+                            <div class="problem-badge project-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>به سرمایه‌های کلان و بلندمدت نیاز دارند</span>
+                            </div>
+                            
+                            <h4 class="problem-label">اما:</h4>
+                            <div class="concerns-list">
+                                <div class="concern-item project-concern">
+                                    <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                                    </svg>
+                                    <span>برای پذیرش در بازارهای عادی مناسب نیستند</span>
+                                </div>
+                                <div class="concern-item project-concern">
+                                    <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                    </svg>
+                                    <span>ریسک ساخت، اجرا و زمان‌بندی دارند</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-section">
+                            <h3 class="problem-subtitle project-border">تأمین مالی بانکی:</h3>
+                            <div class="risks-grid project-risks">
+                                <div class="risk-card">
+                                    <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                    <span>محدود</span>
+                                </div>
+                                <div class="risk-card">
+                                    <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>پرهزینه</span>
+                                </div>
+                                <div class="risk-card">
+                                    <svg class="risk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>کوتاه‌مدت</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-box project-result">
+                            <div class="result-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                </svg>
+                            </div>
+                            <div class="result-content">
+                                <h4>نتیجه:</h4>
+                                <p>بسیاری از پروژه‌ها یا متوقف می‌شوند یا با تأخیر و هزینه بالا اجرا می‌گردند.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Lifecycle Role -->
+                <div class="content-panel" data-panel="lifecycle">
+                    <div class="panel-inner">
+                        <h2>نقش این تابلو در چرخه عمر شرکت</h2>
+                        
+                        <div class="lifecycle-flow">
+                            <div class="lifecycle-intro">
+                                <div class="lifecycle-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                                    </svg>
+                                </div>
+                                <h3>مرحله پیش از بهره‌برداری را پوشش می‌دهد</h3>
+                            </div>
+                            
+                            <div class="lifecycle-steps">
+                                <div class="lifecycle-step">
+                                    <div class="step-marker">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <div class="step-text">
+                                        <strong>پس از تکمیل پروژه:</strong>
+                                        <span>شرکت می‌تواند وارد بازارهای پذیرش‌محور شود</span>
+                                    </div>
+                                </div>
+                                <div class="lifecycle-step">
+                                    <div class="step-marker">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <div class="step-text">
+                                        <strong>یا:</strong>
+                                        <span>به یکی از تابلوهای دیگر منتقل گردد</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="lifecycle-conclusion">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                </svg>
+                                <p>یک <strong>پل رسمی</strong> از پروژه به بنگاه عملیاتی ایجاد می‌کند</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Benefits -->
+                <div class="content-panel" data-panel="benefits">
+                    <div class="panel-inner">
+                        <h2>چرا این تابلو برای کسب‌وکارهای خصوصی جذاب است؟</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>تأمین مالی بدون فشار</h3>
+                                <p>بدون فشار بازار عمومی</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                </div>
+                                <h3>ریسک شفاف</h3>
+                                <p>متناسب با سرمایه‌گذار حرفه‌ای</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                                    </svg>
+                                </div>
+                                <h3>جایگزین بانک</h3>
+                                <p>جایگزین جدی تأمین مالی بانکی</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                                    </svg>
+                                </div>
+                                <h3>مسیر روشن</h3>
+                                <p>پس از بهره‌برداری، مسیر پذیرش روشن است</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon project-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                    </svg>
+                                </div>
+                                <h3>توسعه زیرساخت</h3>
+                                <p>نقش واقعی بازار سرمایه در توسعه</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-quote project-quote">
+                            <div class="quote-glow"></div>
+                            <p>«تأمین مالی پروژه‌های بزرگ، در بازاری که ریسک را می‌فهمد»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions Menu (Right) -->
+            <div class="questions-menu">
+                <div class="question-box active" data-target="intro">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                    <span class="q-text">معرفی</span>
+                </div>
+                <div class="question-box" data-target="target">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    <span class="q-text">شرکت‌های هدف</span>
+                </div>
+                <div class="question-box" data-target="problem">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="q-text">چالش‌های اصلی</span>
+                </div>
+                <div class="question-box" data-target="lifecycle">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    <span class="q-text">چرخه عمر شرکت</span>
+                </div>
+                <div class="question-box" data-target="benefits">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                    <span class="q-text">جذابیت برای شرکت‌ها</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Presentation Modal - Debt Securities -->
+    <div class="presentation-modal" id="presentationModalDebt">
+        <!-- Animated Background -->
+        <div class="modal-bg">
+            <div class="bg-gradient"></div>
+            <div class="particles-layer"></div>
+        </div>
+
+        <!-- Close Button -->
+        <button class="modal-close" id="modalCloseDebt">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Page Header -->
+        <div class="page-market-header debt-header">
+            <div class="market-header-content">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/>
+                </svg>
+                <span>تابلوی اوراق بدهی خصوصی</span>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="detail-layout">
+            <!-- Content Area (Left) -->
+            <div class="detail-content">
+                <!-- Default/Intro Content -->
+                <div class="content-panel active" data-panel="intro">
+                    <div class="intro-content">
+                        <div class="intro-icon debt-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/>
+                            </svg>
+                        </div>
+                        <h1>تابلوی اوراق بدهی خصوصی</h1>
+                        <p class="intro-subtitle">تأمین مالی بدون واگذاری مالکیت</p>
+                        <div class="intro-hint">
+                            <span>یکی از سرفصل‌ها را انتخاب کنید</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 1: Target Companies -->
+                <div class="content-panel" data-panel="target">
+                    <div class="panel-inner">
+                        <h2>این تابلو برای چه شرکت‌هایی مناسب است؟</h2>
+                        <div class="target-grid">
+                            <div class="target-card">
+                                <div class="target-icon debt-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>کسب‌وکارهای خصوصی و خانوادگی</h3>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon debt-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>بنگاه‌های سودده</h3>
+                                <p>دارای جریان نقدی قابل اتکا</p>
+                            </div>
+                            <div class="target-card">
+                                <div class="target-icon debt-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>شرکت‌های نیازمند به تامین مالی بدون واگذاری سهام</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Current Problem -->
+                <div class="content-panel" data-panel="problem">
+                    <div class="panel-inner">
+                        <h2>چالش‌های اصلی</h2>
+                        
+                        <div class="problem-section">
+                            <h3 class="problem-subtitle debt-border">تأمین مالی بدهی عمدتاً:</h3>
+                            <div class="debt-issues-grid">
+                                <div class="debt-issue-card">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                                    </svg>
+                                    <span>بانکی</span>
+                                </div>
+                                <div class="debt-issue-card">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>کوتاه‌مدت</span>
+                                </div>
+                                <div class="debt-issue-card">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                    <span>با وثایق سنگین</span>
+                                </div>
+                                <div class="debt-issue-card warning">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                    </svg>
+                                    <span>یا مسیرهای غیررسمی و پرریسک</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-section">
+                            <h3 class="problem-subtitle debt-border">بازار سرمایه:</h3>
+                            <div class="concern-item debt-concern">
+                                <svg class="concern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                                </svg>
+                                <span>ابزار حرفه‌ای و انعطاف‌پذیر برای بدهی خصوصی ندارد</span>
+                            </div>
+                        </div>
+                        
+                        <div class="result-box debt-result">
+                            <div class="result-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="result-content">
+                                <h4>نتیجه:</h4>
+                                <p>هزینه تأمین مالی بالاست و انتخاب‌ها محدود است.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 5: Benefits -->
+                <div class="content-panel" data-panel="benefits">
+                    <div class="panel-inner">
+                        <h2>چرا این تابلو برای شرکت‌ها جذاب است؟</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon debt-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h3>حفظ مالکیت و کنترل</h3>
+                                <p>مالکیت و کنترل حفظ می‌شود</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon debt-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>هزینه قابل مدیریت</h3>
+                                <p>هزینه تأمین مالی قابل مدیریت‌تر است</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon debt-accent">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                </div>
+                                <h3>سرمایه‌گذار حرفه‌ای</h3>
+                                <p>سرمایه‌گذار نهادی و حرفه‌ای جذب می‌شود</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Model -->
+                <div class="content-panel" data-panel="model">
+                    <div class="panel-inner">
+                        <h2>الگوی پیشنهادی بورس تهران</h2>
+                        
+                        <div class="model-sections">
+                            <div class="model-section debt-section">
+                                <div class="section-icon debt-icon-bg">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"/>
+                                    </svg>
+                                </div>
+                                <h3>در بازار سرمایه‌گذاری حرفه‌ای</h3>
+                                <ul class="model-list">
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                        <span>انتشار اوراق بدهی خصوصی</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                        </svg>
+                                        <span>فقط برای سرمایه‌گذاران حرفه‌ای</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                                        </svg>
+                                        <span>بدون عرضه عمومی</span>
+                                    </li>
+                                    <li>
+                                        <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+                                        </svg>
+                                        <span>طراحی ابزارهای بدهی متناسب با نیاز شرکت</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Role in Financing -->
+                <div class="content-panel" data-panel="role">
+                    <div class="panel-inner">
+                        <h2>نقش این تابلو در ساختار تأمین مالی</h2>
+                        
+                        <div class="financing-role">
+                            <div class="role-items">
+                                <div class="role-item">
+                                    <div class="role-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                                        </svg>
+                                    </div>
+                                    <div class="role-text">
+                                        <h4>جایگزین بانک</h4>
+                                        <p>جایگزین بخشی از تأمین مالی بانکی می‌شود</p>
+                                    </div>
+                                </div>
+                                <div class="role-item">
+                                    <div class="role-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="role-text">
+                                        <h4>تنوع ابزار</h4>
+                                        <p>تنوع ابزارهای مالی شرکت را افزایش می‌دهد</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="role-highlight">
+                                <div class="highlight-header">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <h4>به شرکت امکان می‌دهد:</h4>
+                                </div>
+                                <div class="highlight-points">
+                                    <div class="highlight-point">
+                                        <span class="point-marker">●</span>
+                                        <span>بدون تغییر مالکیت</span>
+                                    </div>
+                                    <div class="highlight-point">
+                                        <span class="point-marker">●</span>
+                                        <span>و بدون پذیرش عمومی</span>
+                                    </div>
+                                    <div class="highlight-point main">
+                                        <span>تأمین مالی کند</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions Menu (Right) -->
+            <div class="questions-menu">
+                <div class="question-box active" data-target="intro">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                    <span class="q-text">معرفی</span>
+                </div>
+                <div class="question-box" data-target="target">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    <span class="q-text">شرکت‌های هدف</span>
+                </div>
+                <div class="question-box" data-target="problem">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="q-text">چالش‌های اصلی</span>
+                </div>
+                <div class="question-box" data-target="benefits">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                    <span class="q-text">جذابیت برای شرکت‌ها</span>
+                </div>
+                <div class="question-box" data-target="model">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <span class="q-text">الگوی پیشنهادی</span>
+                </div>
+                <div class="question-box" data-target="role">
+                    <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                    </svg>
+                    <span class="q-text">نقش در تأمین مالی</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition">
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
