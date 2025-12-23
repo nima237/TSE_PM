@@ -1326,12 +1326,26 @@ body:hover .cursor-glow.hovering {
     margin-left: 15px;
     flex-shrink: 0;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.info-card .card-icon svg {
+    width: 25px;
+    height: 25px;
+    display: block;
+    flex-shrink: 0;
 }
 
 /* Card Content */
 .card-content {
     flex: 1;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-content h4 {
